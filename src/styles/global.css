@@ -1,0 +1,19 @@
+@import url('https://fonts.cdnfonts.com/css/zalando-sans');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  body {
+    @apply min-h-screen bg-slate-100 font-brand text-slate-900 antialiased;
+  }
+
+  button {
+    @apply cursor-pointer;
+  }
+}
