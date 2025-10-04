@@ -41,17 +41,6 @@ A small React + Vite application that demonstrates Firebase Authentication with:
 - **Protected routes** redirect unauthenticated users to the login page.
 - **Auth context** exposes helper methods (`registerWithEmail`, `signInWithEmail`, `signInWithGoogle`, `signOutUser`).
 
-## Optional: Auth emulator
-
-You can point the app to the Firebase Auth emulator by toggling the flag in `.env`:
-
-```env
-VITE_USE_AUTH_EMULATOR=true
-VITE_AUTH_EMULATOR_URL=http://127.0.0.1:9099
-```
-
-When the flag is `true` and `npm run dev` is running, the app connects to the emulator automatically.
-
 ## Next steps
 
 - Add server-side rules for other Firebase products (e.g., Firestore).

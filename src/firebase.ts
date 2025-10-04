@@ -1,5 +1,5 @@
 import { FirebaseOptions, initializeApp } from 'firebase/app';
-import { connectAuthEmulator, getAuth } from 'firebase/auth';
+import { getAuth } from 'firebase/auth';
 
 const baseConfig: Record<string, string | undefined> = {
   apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
@@ -36,8 +36,3 @@ if (measurementId) {
 const app = initializeApp(firebaseConfig);
 
 export const auth = getAuth(app);
-
-if (import.meta.env.DEV && import.meta.env.VITE_USE_AUTH_EMULATOR === 'true') {
-  const emulatorUrl = import.meta.env.VITE_AUTH_EMULATOR_URL ?? 'http://127.0.0.1:9099';
-  connectAuthEmulator(auth, emulatorUrl);
-}
