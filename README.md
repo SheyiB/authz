@@ -40,9 +40,3 @@ A small React + Vite application that demonstrates Firebase Authentication with:
 - **Google SSO** is available on both sign-in and sign-up screens.
 - **Protected routes** redirect unauthenticated users to the login page.
 - **Auth context** exposes helper methods (`registerWithEmail`, `signInWithEmail`, `signInWithGoogle`, `signOutUser`).
-
-## Next steps
-
-- Add server-side rules for other Firebase products (e.g., Firestore).
-- Tailor the styling or integrate a design system.
-- Extend the onboarding flow with additional data capture.
