@@ -203,7 +203,13 @@ export function SignupPage() {
 										placeholder='you@example.com'
 										autoComplete='email'
 										className={inputClasses}
-										{...register('email', { required: 'Email is required' })}
+										{...register('email', {
+											required: 'Email is required',
+											pattern: {
+												value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+												message: 'Enter a valid email address',
+											},
+										})}
 									/>
 									{errors.email && (
 										<span className={errorTextClasses}>
